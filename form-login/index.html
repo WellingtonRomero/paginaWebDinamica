@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login|techRevolution</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/styleLogin.css">
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<link rel="icon" href="imagenes/logotienda.png" type="image/png"/>
+</head>
+<body onload="inicio()">
+
+<div>
+    <img src="imagenes/logotienda.png" alt="logotienda" width="100px" />
+</div>
+    <div>
+        <p>Tech Revolution</p>
+    </div>
+    
+<form name="sesion" onsubmit="login()">
+	<table border="0">
+		<tr>
+            <p id="entrar">Entrar</p>
+			<th scope="row"><label title="Campo obligatorio">Nombre*</label></th>
+			<td>
+				<input type="text" name="nombre" size="20" required  class="inicio"  />
+			</td>
+		</tr>
+
+		<tr>
+			<th scope="row"><label>Contraseña*</label></th>
+			<td>
+				<input type="password" name="contrasenia1"  value="" size="20" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\w]).{8,}" required title="La contraseña debe contener 8 caracteres una mayuscula una minuscula un numero y un caracter" class="inicio" />
+			</td>
+		</tr>
+
+		<th scope="row">
+				<input type="submit" value="Enviar" id="enviar">
+			</th>
+        		<th scope="row">
+                    <a href="registro/index.html"><input type="button" value="Registrarse" id="registrarse"></a>
+			</th>
+	</table>
+</form>
+
+</body>
+</html>

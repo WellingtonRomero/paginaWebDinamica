@@ -1,0 +1,97 @@
+body {
+    height: 770px;
+ background: linear-gradient(to top right, #ff66cc 0%, #ff6666 78%);
+   
+}
+
+form {
+  background-color: bisque;
+  width: 380px;
+  margin: auto;
+  color: white;
+  border: solid 6px #EC7063;
+  border-radius: 5px;
+}
+form label {
+  width: 150px;
+  float: left;
+  color: black;
+}
+
+#entrar {
+  color: black;
+}
+
+div img {
+  margin-left: 46%;
+}
+
+p {
+  margin-left: 46%;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+label:hover{
+    color:peru;
+}
+
+a {
+  text-decoration: none;
+}
+
+#enviar {
+  width: 100px;
+  margin-left: 30px;
+}
+
+#registrarse {
+  margin-left: 90px;
+}
+
+input[type=text]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+    color: orangered;
+     background-color:white;
+}
+
+input[type=password]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+    box-sizing: border-box;
+    background-color: #FDD;
+}
+
+#enviar, #registrarse{
+    height: 2.5em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#enviar:hover, #registrarse:hover {
+    font: bold .6em sans-serif;
+  outline: none;
+  background: #EC7063;
+    border:0;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+}
+
+#enviar:focus, #registrarse:focus {
+    font: bold .6em sans-serif;
+  outline: none;
+  background: white;
+    border:0;
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+}

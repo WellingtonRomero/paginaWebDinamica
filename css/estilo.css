@@ -1,0 +1,410 @@
+/*****************************************************************************************************************************************************/
+/*cookie*/
+		#barraAceptacion {
+    display:none;
+    position:fixed;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding-bottom:20px;
+    width:100%;
+    text-align:center;
+    min-height:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    z-index:99999;
+}
+ 
+.inner {
+    width:100%;
+    position:absolute;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:12px;
+    top:30%;
+}
+ 
+.inner a.ok {
+    padding:4px;
+    color:#00ff2e;
+    text-decoration:none;
+}
+ 
+.inner a.info {
+    padding-left:5px;
+    text-decoration:none;
+    color:#faff00;
+}
+
+/*****************************************************************************************************************************************************/
+/**/
+@keyframes seccionPrincipal1 {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.seccionPrincipal1 {
+  -webkit-tap-highlight-color: transparent;
+ transform: translatez(0);
+  box-shadow: 0 0 1px transparent;
+}
+.seccionPrincipal1:hover {
+  animation-name: seccionPrincipal1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+/*****************************************************************************************************************************************************/
+/*carrusel*/
+.mySlides {display:none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+        position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/*  */
+.prev, .next {
+    position: absolute;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* */
+.next {
+    
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*  */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* slider animation */
+.slider {
+  -webkit-animation-name: slider;
+  -webkit-animation-duration: 3s;
+  animation-name: slider;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slider {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes slider {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*****************************************************************************************************************************************************/
+/*efecto de botones*/
+
+.overlay {
+    position:absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 101%; 
+  height: 0;
+    margin: 0;
+  transition: .1s ease;
+    
+}
+
+.seccionPrincipal1:hover .overlay {  
+  height: 7%;
+}
+
+.text {
+    position: absolute;
+  color: white;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+    padding-bottom: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    margin-top: 7px;
+}
+
+.btnS{
+    background-color: orangered;
+    width: 224px;
+    cursor: pointer;
+    border: 0px;
+    
+}
+/*****************************************************************************************************************************************************/
+/*boton arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;	
+	cursor:pointer;
+	position: fixed;
+	bottom:60px;
+	right:140px;   
+}
+
+.ir-arriba:hover{
+    background-color: darkgray;
+    
+}
+/*****************************************************************************************************************************************************/
+/*menu flotante
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+*/
+/*****************************************************************************************************************************************************/
+/*Estilo del escaparate virtual*/
+*{
+            box-sizing: border-box;
+     } 
+ 
+body{
+    background-color:#EBECED ;
+}
+
+header{
+    position: sticky;
+    z-index: 999;
+	background-color:#ffffff;
+	top:0;
+	margin: auto;
+	border-top:3px solid;
+	border-top-color:red;
+	box-shadow:0 1px 0px #888888;
+    height: 100px;
+   
+}
+
+.logoImagen{
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+.loginImagen{
+    margin-top:25px;
+    margin-left:18px;	
+}
+
+#menuBoton{
+    margin-top:26px;
+    overflow: hidden;
+}
+
+
+#entR{
+	color:black;
+	font-size:12px;
+	font-weight:bold;
+	overflow: hidden;
+}
+#entR:hover{
+    color: peru;
+}
+
+.carritoImagen{
+margin-top:25px;
+}
+
+
+#carritoNombre{
+	color:black;
+	font-size:12px;
+	font-style:initial;
+	font-weight: bold;
+	text-align:justify;
+	overflow: hidden;
+    
+}
+
+#carritoNombre:hover{
+    color: peru;
+}
+
+.titulo{
+    color:red;
+    font-style:italic;
+    margin-top:35px;
+}
+
+a{
+	text-decoration:none;
+}
+/*buscador*/
+
+#containerInput{
+  overflow: hidden;
+  width: 350px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+ .inputBuscador{
+  width: 300px;
+  height: 50px;
+  background: #D0D3D4;
+  border: none;
+  font-size: 12pt;
+  float: left;
+  color:#1C2833;
+  padding-left: 15px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius:5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+    margin-top: 20px;
+}
+
+#buscador:hover button.icon{
+    outline:none;
+    margin-left: -49px;
+  }
+
+.icon{
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: white;
+}
+
+/*texto de Bienvenida*/
+#franja{
+    background-color:#862c2c;
+    padding-top: 2px;
+    padding-bottom:30px;
+}
+
+#frajaTexto{
+    margin-left:25px;
+    color:#ffffff;
+}
+
+/*menu vertical*/
+nav{
+    z-index: 1000;
+}
+nav ul{
+    margin-top: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a img{
+   width: 222px;  
+}
+
+.nv{
+    margin-left: 12px;
+}
+
+/*textoSaludo*/
+.textoSaludo{
+    font-size:20px;
+    font-style:Normal;
+    margin-top:20px;
+    margin-left:13px;
+    color:gray;
+}
+
+.holaTexto{
+    text-decoration: underline;
+    text-decoration-color: red;
+    -moz-text-decoration-color: red;
+    color:black;
+}
+
+ .seccionPrincipal1{
+	margin-top:30px;
+}
+/*secciones*/
+
+/****/
+#links1{
+    margin-top:20px;
+}
+
+
+#copyRight{
+    margin-left:220px;
+}
+
+.privacion{
+    text-decoration:none;	
+    color:black;
+    margin-left:20px;
+}
+
+#condicion{
+    margin-left:180px;
+}
+
+.condiciones{
+    text-decoration:none;	
+    color:black;
+    margin-left:20px;
+}
+
+
+#links2{
+    margin-top:25px;
+}
+
+#redesSociales{
+    margin-top:25px;
+    margin-left:20px;	
+}
+
+#mapa{
+	margin-left:170px;
+}
+
+/*efectos redes sociales*/
+#redesSociales{
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+#redesSociales:hover {
+  transform: scale(1.1);
+}
+/*footer*/
+footer{
+    border-top:3px solid;
+    border-top-color:red;
+    margin-top:40px;
+    border-color:#ff0000;
+    background-color:#EAAAAA;
+    height:200px;
+}
